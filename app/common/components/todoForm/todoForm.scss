@@ -1,0 +1,7 @@
+.todo-form {
+  &-buttons {
+    .btn + .btn {
+      margin-left: 5px;
+    }
+  }
+}
