@@ -1,4 +1,3 @@
-import bootstrap from '../bootstrap'
 import {actionTypes} from '../actions/actionTypes'
 import {uniqueId} from '../../common/utils/commonUtils'
 import todoStatus from '../../constants/todoStatus'
@@ -23,7 +22,7 @@ const editTodo = (todos, {id, description, title}) => {
   })
 }
 
-const todosReducer = (state = bootstrap, action) => {
+const todosReducer = (state = [], action) => {
   switch (action.type) {
     case actionTypes.ADD:
       return [
